@@ -1,9 +1,8 @@
 import { User } from 'lucide-react'
-import Link from 'next/link'
 
 export function SignIn() {
   return (
-    <Link
+    <a
       href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`}
       className="flex items-center gap-3 text-left transition-colors hover:text-gray-50"
     >
@@ -14,6 +13,6 @@ export function SignIn() {
       <p className="max-w-[140px] text-sm leading-snug">
         <span className="underline">Crie sua conta</span> e salve suas memórias
       </p>
-    </Link>
+    </a>
   )
 }
